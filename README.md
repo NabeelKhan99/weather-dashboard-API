@@ -15,7 +15,7 @@ A beautifully animated, responsive **Weather Dashboard** built with **React**, *
 
 ## 🖼️ Preview
 
-![Weather Dashboard Preview](https://your-demo-image-or-gif-link.com)
+![Weather Dashboard Preview](weatherdasher.netlify.app)
 
 ## 🛠️ Tech Stack
 
