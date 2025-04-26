@@ -1,0 +1,29 @@
+{
+    "name": "weather-dashboard",
+    "version": "1.0.0",
+    "description": "A modern weather dashboard with temperature comparison charts, dark mode, and animated graphs.",
+    "main": "src/index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "start": "vite"
+    },
+    "dependencies": {
+      "axios": "^1.6.8",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.22.3",
+      "recharts": "^2.7.2"
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.4.17",
+      "postcss": "^8.4.33",
+      "tailwindcss": "^3.4.1",
+      "vite": "^5.2.0"
+    },
+    "browserslist": [
+      "defaults"
+    ]
+  }
+  

@@ -1,0 +1,109 @@
+/* Main card container */
+.weather-card-wrapper {
+  background-color: var(--card-bg, #1e293b); /* Dark mode default */
+  color: var(--card-text, #f1f5f9);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  max-width: 350px;
+  flex: 1 1 300px; /* Flexibility for responsive layout */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px); /* Gloss effect */
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Hover transition */
+.weather-card-wrapper:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten card on hover */
+}
+
+.weather-card-wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Forecast list container */
+.forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Each forecast item */
+.forecast-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.forecast-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.forecast-item p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.forecast-item img {
+  width: 50px;
+  height: 50px;
+  margin: 0.25rem 0;
+}
+
+.forecast-item.day {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.forecast-item.night {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Details for humidity, wind, and pressure */
+.details {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .weather-card-wrapper {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .forecast-item p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-cards-container {
+    flex-direction: column; /* Stack the cards on small screens */
+    gap: 1rem;
+  }
+
+  .weather-card-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
