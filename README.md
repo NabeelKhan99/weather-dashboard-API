@@ -13,9 +13,7 @@ A beautifully animated, responsive **Weather Dashboard** built with **React**, *
 - 📈 **Chart.js Integration**: (Coming soon) View forecast trends with beautiful animated charts.
 - 🌐 **API Integration**: Fetches accurate weather data via the **OpenWeatherMap API**.
 
-## 🖼️ Preview
 
-![Weather Dashboard Preview](weatherdasher.netlify.app)
 
 ## 🛠️ Tech Stack
 
